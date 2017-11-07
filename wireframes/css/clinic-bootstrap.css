@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end css reset*/
+
+/*all elements selected to set box sizing*/
+* {
+    box-sizing: border-box;
+}
+
+/*container gets yellow border*/
+.container {
+    border: 1px solid #ffff00;
+}
+
+/*row gets blue border*/
+.row {
+    border: 1px solid #0000ff;
+}
+
+/*col-md-6, col-md-12, col-md-4, col-md-5, and col-lg-10 get red border and grey background*/
+.col-md-6, .col-md-12, .col-md-4, .col-md-5, .col-lg-10 {
+    border: 1px solid #ff0000;
+    background-color: #a9a9a9;
+}
+
+/*col-md-12, col-md-4, and col-lg-10 text is centered*/
+.col-md-12, .col-md-4, .col-lg-10 {
+    text-align: center;
+}
+
+/*header get top and bottom padding*/
+.header {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+/*about gets border radius and negative top margin to have it float above first and third container*/
+.about {
+    margin-top: -30px;
+    border-radius: 5px;
+}
+
+/*h1, h3, image, h4, h5, h6, and p get top and bottom margin*/
+h1, h3, .image, h4, h5, h6, p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*This assignment was a good opportunity to jump into bootstrap. I would definitely use this framework for a larger, more complex website. I like that you get more flexibility with the design in different screen sizes. I would like to explore more in this framework. One thing I found is that neither Skeleton's nor Bootstrap's CSS files pass validation.*/

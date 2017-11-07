@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Project</title>
+    <style>
+        img {
+            max-height: 125px;
+            margin: 3px;
+            border: 1px solid #dedede;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <script>
+//        get the url of the gallery
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+//            api key is included in this url
+            "url": "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=448412421cc03979ecb5ff16ad706bf9&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1",
+            "method": "GET",
+            "headers": {}
+        }
+
+//        use the ajax method to get the JSON data and assign to data arguement
+        $.ajax(settings).done(function(data) {
+            console.log(data);
+
+
+//            prepend the first title, which is a property in an object called "photo" in the "photo" array, to the galleryTitle id
+            $("#galleryTitle").prepend(data.photos.photo[0].title);
+            
+//            loop through the object properties to get each object in the photo array using an anoymous function to assign an index (i) and a value (gp)
+            $.each(data.photos.photo, function(i, gp) {
+                /* values will help to access the properties easier
+                ex: gp.farm instead of data.photos.photo[0].farm */
+                var farmId = gp.farm;
+                var serverId = gp.server;
+                var id = gp.id;
+                var secret = gp.secret;
+                
+//                console.log will help check to ensure the values needed are being retrieved
+                console.log(farmId + ", " + serverId + ", " + id + ", " + secret);
+
+//                the variables that contain the info for the properties of the objects will be appended to the flickr id
+                $("#flickr").append('<img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
+
+            }); // end the loop to display images
+        });
+
+    </script>
+
+
+    <h2 id="galleryTitle"> Gallery</h2>
+    <div style="clear:both;"></div>
+    <div id="flickr"></div>
+<!--    The article broke this down pretty effectively so that it was easy to understand what each step in the process does. I do want to delve a bit more into JSON to figure out how I am going to use it for my app.-->
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end css reset*/
+
+/*all elements box sizing is set*/
+* {
+    box-sizing: border-box; 
+}
+
+/*row class get red border*/
+.row {
+    border: 1px solid #ff0000;
+}
+
+/*columns class gets blue border, grey background, and padding*/
+.columns {
+    border: 1px solid #0000ff;
+    background-color: #a9a9a9;
+    padding: 10px;
+}
+
+/*top bar class gets orange background and padding is removed*/
+.top-bar {
+    background-color: #fa6900;
+    height: 5px;
+    padding: 0;
+}
+
+/*twelve, four, and ten classes' text is centered*/
+.twelve, .four, .ten {
+    text-align: center;
+}
+
+/*nav p and copyright p text is right aligned*/
+.nav p, .copyright p {
+    text-align: right;
+}
+
+/*header gets top and bottom padding*/
+.header {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+/*about gets negative top margin and border radius*/
+.about {
+    margin-top: -30px;
+    border-radius: 10px;
+}
+
+/*h1, h3, image, h4, h5, and h6 get bottom padding*/
+h1, h3, .image, h4, h5, h6 {
+    padding-bottom: 5px;
+}
+
+/*I'm getting the hang of Skeleton. I like it for its simplicity and could see using this for a smaller website with a design that isn't too complex.*/
