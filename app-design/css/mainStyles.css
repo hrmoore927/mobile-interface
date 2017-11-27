@@ -1,0 +1,39 @@
+body {
+    background-color: #fff;
+}
+
+.avatar {
+    background: url(../images/avatar.png) no-repeat center;
+}
+
+.statusbar {
+    width: 100%;
+}
+
+.featurePhoto {
+    height: 32.5%;
+}
+
+.profileNav {
+    background-color: #7a032a;
+}
+
+.profileNav li {
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    font: 18px 'Montserrat', 'Arial', sans-serif;
+}
+
+.title h1 {
+    font: 18px 'Montserrat', 'Arial', sans-serif;
+}
+
+.col-sm-4 {
+    width: 33.3%;
+    color: #fff;
+}
+
+.searchIcon {
+    text-align: right;
+}
