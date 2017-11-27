@@ -1,4 +1,0 @@
-[10/30/2017, 11:30:54 AM] layer "someemail@email.com": Unsupported extension: com
-[10/30/2017, 11:30:54 AM] layer "someemail@email.com": Unsupported extension: com
-[10/30/2017, 11:30:54 AM] layer "Google+": Expected end of input but "+" found.
-[10/30/2017, 11:30:54 AM] layer "someemail@email.com": Unsupported extension: com
